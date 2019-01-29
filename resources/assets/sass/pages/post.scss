@@ -1,0 +1,136 @@
+.header-container.blog-post {
+  padding-top: 100px;
+  position: relative;
+  background-color: white;
+
+  .blog-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 210px 0 10px;
+  }
+
+  h1 {
+    position: relative;
+    color: white;
+    padding: 0 100px;
+    bottom: 0;
+    text-transform: uppercase;
+    font: bold 54px 'Roboto Condensed', sans-serif;
+    z-index: 2;
+    margin-top: 10px;
+  }
+
+  .single-post-categories {
+    position: relative;
+    padding: 0 100px;
+    width: 100%;
+    z-index: 2;
+    
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      background-color: #E81C40;
+      color: white;
+      text-transform: uppercase;
+      padding: 10px;
+      font: 300 24px 'Roboto', sans-serif;
+      margin-right: 10px;
+    }
+  }
+}
+
+.blog-header::after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-container + .container {
+  padding: 100px 20px;
+}
+
+.post-info {
+  width: 140px;
+  float: left;
+
+  .name {
+    color: #36B2E2;
+    font: 300 24px 'Roboto', sans-serif;
+    margin-bottom: 5px;
+  }
+
+  .post-published {
+    font: bold 14px 'Roboto Condensed', sans-serif;
+  }
+
+  a {
+    margin-right: 10px;
+  }
+}
+
+.post-content {
+  width: calc(100% - 180px);
+  margin-left: 40px;
+  float: left;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  p,
+  span {
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-container.blog-post h1 {
+    font-size: 40px;
+  }
+
+  .header-container .single-post-categories,
+  .header-container h1 {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-container.blog-post h1 {
+    padding: 0 20px;
+  }
+  .header-container.blog-post .single-post-categories {
+    padding: 0 20px;
+  }
+
+  .header-container.blog-post .blog-header {
+    padding: 80px 0 10px;
+  }
+
+  .header-container + .container {
+    padding: 20px;
+  }
+
+  .post-info,
+  .post-content {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  .header-container .single-post-categories a {
+    margin-bottom: 10px;
+  }
+}

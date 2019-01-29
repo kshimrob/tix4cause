@@ -1,0 +1,182 @@
+
+.product-section {
+    display: flex;
+    display: -webkit-flex;
+    padding: 150px 20px 25px;
+}
+
+.product-section-image {
+    margin-right: 1%;
+    width: 49%;
+
+    img {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    p {
+        display: inline-block;
+        text-transform: uppercase;
+        vertical-align: top;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+}
+
+.product-section-information {
+    margin-left: 1%;
+    width: 49%;
+
+    .product-section-title {
+        margin-bottom: 10px;
+    }
+
+    .tag {
+        margin-bottom: 10px;
+        font: 600 18px 'Roboto', sans-serif;
+        text-transform: none;
+    }
+
+    .date-time {
+        font: 600 18px 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #E81C40;
+    }
+
+    .product-section-price {
+        font: bold 40px 'Roboto Condensed', sans-serif;
+        margin-bottom: 0;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 0;
+        padding: 10px;
+        font: normal 18px 'Roboto', sans-serif;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    button {
+        display: block;
+        margin-top: 16px;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .donated-by {
+        margin-top: 10px;
+        text-transform: uppercase;
+        font: bold 14px 'Roboto Condensed', sans-serif;
+        color: #12A8DE;
+    }
+}
+
+.cause-banner {
+    background-color: #12A8DE;
+    text-align: center;
+    padding: 20px 50px;
+
+    h2 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font: bold 54px 'Roboto Condensed', sans-serif;
+        z-index: 10;
+        position: relative;
+
+        span {
+            display: inline-block;
+            position: relative;
+            z-index: 10;
+        }
+
+        span::after {
+            height: 25px;
+            position: absolute;
+            background-color: #FFDA00;
+            width: 100%;
+            content:'';
+            left: 0;
+            z-index: -1;
+            top: 19px;
+        }
+    }
+}
+
+.single-cause {
+    padding: 100px 20px;
+    a {
+      transition: 0.2s;
+    }
+    .md-col-6 {
+      width: 49%;
+      float: left;
+    }
+    .md-col-6:first-of-type {
+      margin-right: 2%;
+    }
+    h2 {
+      color: #2FA9DD;
+    }
+    .main-img {
+      width: 100%;
+    }
+    .logo {
+      margin-bottom: 10px;
+      height: 100px;
+    }
+    .social {
+      margin-right: 20px;
+    }
+    .social:hover {
+      opacity: .6;
+    }
+    .extra-info {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    a.tag:hover {
+      text-decoration: underline;
+    }
+    @media only screen and (max-width: 767px) {
+      .sm-col-12 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .cause-banner h2 {
+        font-size: 40px;
+    }
+
+    .cause-banner h2 span::after {
+        height: 20px;
+        top: 13px;
+    }
+
+    .cause-banner + .single-cause {
+        padding: 50px 20px;
+    }
+
+    .product-section {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .product-section-image,
+    .product-section-information {
+        width: 100%;
+        margin: 0;
+    }
+  }

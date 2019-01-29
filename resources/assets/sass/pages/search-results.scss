@@ -1,0 +1,132 @@
+.search-results-container {
+    min-height: 500px;
+    margin: 20px auto;
+
+    a {
+        color: darkblue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.search-results-count {
+    margin-bottom: 20px;
+}
+
+.search-results{
+    padding:200px 0;
+    min-height:100vh;
+    margin-bottom:100px;
+    display:flex;
+  }
+  
+  .search-results .results-container-col{
+    float:left;
+    width:77%;
+    margin-right:3%;
+  
+  }
+  .search-results .search-filters{
+    float:left;
+    width:20%;
+  }
+  .search-results .searchResult-row{
+    display:flex;
+    padding: 20px 0;
+    border-bottom: 4px solid black;
+  }
+  .search-results .searchResult-row .date{
+    width: 15%;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .search-results-nearby .searchResult-row:last-of-type{
+    border-bottom:none;
+  }
+  .search-results .searchResult-row .event-info{
+    width:70%;
+  }
+  .search-results .searchResult-row .see-tickets{
+    width:15%;
+  }
+  .search-results .searchResult-row .event-name{
+    color: #4D4D4D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .search-results .searchResult-row .location{
+    color: #000000;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .10px;
+    text-transform: uppercase;
+  }
+  .search-results select{
+      height: 45px;
+      width: 233px;
+      border: 2px solid #12A8DE;
+      color: #000000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      padding-left: 10px;
+  }
+  .search-results .search-filters label, .search-results label{
+    display:block;
+    color: #000000; font-family: "Roboto Condensed";  font-size: 14px;  font-weight: bold;  letter-spacing: .10px;
+    text-transform:uppercase;
+  }
+  .search-results .date-filter, .search-results .category-filters{
+    margin-top:50px;
+  }
+  .search-results #search-results-all{
+    margin-top:50px;
+  }
+  .category-filters input, .date-filter input{
+    display:none;
+  }
+  .category-filters label, .date-filter label{
+    display:block;
+    padding:5px 10px;
+    padding-left:0;
+    cursor:pointer;
+  }
+  .category-filters label span, .date-filter label span{
+    position:relative;
+    line-height:22px;
+  }
+  .category-filters label span:before, .category-filter label span:after, .date-filter label span:before, .date-filter label span:after{
+    content: '';
+  }
+  .category-filters label span:before, .date-filter label span:before{
+     border: 1px solid #12A8DE;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .category-filters label span:after, .date-filter label span:after{
+    background: #12A8DE;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -2px;
+      left: 0px;
+      transition: 300ms;
+      opacity: 0;
+  }
+  .category-filters label input:checked+span:after, .date-filters label input:checked+span:after {
+    opacity: 1;
+  }

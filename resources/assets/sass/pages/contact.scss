@@ -1,0 +1,70 @@
+.contact{
+  padding: 200px 20px;
+}
+.main-contact-container{
+  background-color: #12A8DE;
+  background-image: url(https://s3.us-east-2.amazonaws.com/elasticbeanstalk-us-east-2-698644334116/contact_heart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position-y: 300px;
+}
+.contact h1, .contact h2, .contact p{
+  color:white;
+}
+.contact label{
+  display:block;
+      color: #000000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.contact form{
+  width:50%;
+}
+.contact input, .contact textarea{
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  font-family: Roboto;
+}
+.contact input{
+  height:30px;
+}
+.contact a{
+  color:white;
+}
+
+p#donated-ticket-message {
+  margin-top: 15px;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .10px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+#submit-contact-form{
+  cursor:pointer;
+  width:auto;
+  margin-top:25px;
+}
+#submit-contact-form:hover{
+opacity: 0.5;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact form {
+    width: 80%;
+  }
+}
+@media (max-width:600px){
+  .contact form{
+    width:100%;
+  }
+}

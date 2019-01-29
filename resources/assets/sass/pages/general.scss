@@ -1,0 +1,63 @@
+h1,
+h2,
+p,
+.tag {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font: bold 40px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font: 300 24px 'Roboto', sans-serif;
+}
+
+p {
+  font: 300 14px 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+.tag {
+  font: bold 14px 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.yellow-btn {
+  padding: 5px 10px;
+  background-color: #FFDA00;
+  font: bold 14px 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.2px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.red-btn,
+.black-btn,
+.checkout-section button[type=submit] {
+  padding: 5px 10px;
+  border: 0;
+  line-height: 1;
+  background-color: #E81C40;
+  color: white;
+  text-transform: uppercase;
+  font: bold 14px 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.black-btn {
+  background-color: black;
+  color: white;
+}
+
+.checkout-section button[type=submit]:hover,
+.red-btn:hover,
+.yellow-btn:hover,
+.black-btn:hover,
+.home-search button:hover {
+  opacity: 0.5;
+}

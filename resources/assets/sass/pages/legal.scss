@@ -1,0 +1,29 @@
+.legal-header {
+  padding: 100px 100px 50px;
+  margin-bottom: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    margin-top: 70px;
+    color: white;
+    font-size: 54px;
+  }
+}
+
+.legal-copy {
+  padding: 0 20px 100px;
+
+  h2 {
+    font: 600 18px 'Roboto', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .legal-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+  }
+}
